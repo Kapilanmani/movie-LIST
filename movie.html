@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Listing System</title>
+  <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+  <h1>Movie Listing System</h1>
+  
+  <div id="movieForm">
+    <h2>Add a Movie</h2>
+    <label for="movieName">Name:</label>
+    <input type="text" id="movieName" required>
+    <label for="movieDescription">Description:</label>
+    <textarea id="movieDescription" required></textarea>
+    <label for="movieImage">Image:</label>
+    <input type="file" id="movieImage" accept="image/*" required>
+    <button onclick="addMovie()">Add Movie</button>
+  </div>
+
+  <div id="movieList">
+    <h2>Movie List</h2>
+    <ul id="movieItems"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
